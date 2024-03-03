@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+/* font-family: "Alata", sans-serif; */
+
+/* =====================
+Body Style 
+=======================*/
+
+/* basic-design */
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  height: 1024px;
+  overflow-x: hidden;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  font-weight: 900;
+  text-shadow: -1px 1px 3px black;
+}
+/* ===================== */
+span {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  color: #fff;
+  font-family: "Alata", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.Tota_design {
+  max-width: 1440px;
+  min-width: 600px;
+  margin: auto;
+  padding: 0px 60px;
+}
+main {
+  background-color: #221a37;
+  height: 100%;
+  border-radius: 50px;
+}
+section {
+  background-image: url(./img/Background\ Image.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border-radius: 50px;
+}
+/* =======================
+MenuBar Design  
+========================*/
+.heading {
+  padding: 60px 0px;
+}
+nav {
+  display: grid;
+  grid-template-columns: 15% auto;
+}
+.logo img {
+  width: 145px;
+  object-fit: contain;
+}
+nav ul li {
+  display: inline-block;
+}
+.logo {
+  display: flex;
+  height: 37px;
+}
+nav ul {
+  text-align: right;
+}
+nav ul li a {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+a.bg-design {
+  background: #402166;
+  border-radius: 61px;
+  box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 44%);
+  padding: 8px 32px;
+}
+/* Responsive Menubar  */
+.mobail_menu {
+  display: none;
+}
+/*=======================
+ index.html Section Design
+ =======================*/
+.text_box {
+  display: grid;
+  grid-template-columns: 522px;
+  justify-content: end;
+}
+.text_box span {
+  color: #5d3974;
+  font-size: 20px;
+}
+.span_tx {
+  color: #575757 !important;
+  font-size: 14px !important;
+  margin-bottom: 30px;
+}
+.text_box h2 {
+  color: #fff;
+  font-size: 52px;
+}
+.text_box p {
+  color: #817e89;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* ==========================
+Resume.Html Design
+===========================*/
+.text-under-box {
+  display: grid;
+  grid-template-columns: 500px;
+  justify-content: end;
+}
+.box-items {
+  display: grid;
+  grid-template-columns: 136px 320px;
+  grid-gap: 55px;
+  margin-bottom: 45px;
+}
+.box-item-style1 h3 {
+  color: #5d3974;
+  font-size: 13px;
+}
+.box-item-style1 p {
+  color: #575757;
+  font-size: 13px;
+}
+.box-item-style2 * {
+  color: #e8e8e8;
+  font-size: 14px;
+}
+.box-item-style1:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 245px;
+  top: -8px;
+  right: -23px;
+  background: #a60ac7;
+  border-radius: 40px;
+  box-shadow: 0px 0px 7px #a60ac7;
+}
+.box-item-style2 {
+  padding-top: 10px;
+}
+.box-item-style2 ul {
+  list-style: disc;
+  list-style-position: outside;
+}
+.box-items * {
+  font-weight: normal;
+}
+.box-item-style2 ul li {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+.box-item-style2 ul li span {
+  font-size: 10px;
+}
+.box-item-style2 ul li ul {
+  padding-left: 20px;
+}
+.box-item-style1 {
+  text-align: right;
+  position: relative;
+}
+.box-item-style2 h2 {
+  margin-bottom: 10px;
+}
+.box-items.box-items-1 {
+  margin-top: 28px;
+}
+
+/* ==========================
+Gallery.Html Design
+===========================*/
+.gallery {
+  display: grid;
+  grid-template-columns: 500px;
+  justify-content: end;
+}
+.gallery-box-item img {
+  width: 222.5px;
+  height: 223.5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 20px;
+}
+.gallery-box {
+  display: grid;
+  grid-template-columns: 242px 242px;
+  justify-items: center;
+}
+
+/* ==========================
+Certificates.Html Design
+===========================*/
+.certificat .gallery-box-item img {
+  border-radius: 0px;
+}
+
+/* =============================
+Responsive Design
+===============================*/
+@media screen and (max-width: 768px) {
+  /* -==========
+About
+==============*/
+  body {
+    height: 950px;
+  }
+  .Tota_design {
+    max-width: 505px;
+    min-width: 250px;
+    padding: 0px 15px;
+  }
+  .mobail_menu {
+    display: block;
+  }
+  .text_box p {
+    color: #c0c0c0;
+  }
+  section {
+    background-size: contain;
+  }
+  .heading {
+    display: none;
+  }
+  .text_box {
+    display: block;
+  }
+  .logo_mobail {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo_mobail h1 {
+    font-size: 27px;
+    color: #e8e8e8;
+  }
+  .links ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .links {
+    padding-bottom: 55px;
+  }
+  /* ===============
+Resume 
+==================*/
+  .text-under-box {
+    display: block;
+    width: 100%;
+  }
+  .box-items {
+    grid-template-columns: 124px auto;
+    margin-bottom: 45px;
+  }
+  .box-item-style1 h3 {
+    font-size: 12px;
+  }
+  .box-item-style1 p {
+    font-size: 12px;
+  }
+  .box-item-style2 {
+    padding-top: 0px;
+  }
+  .box-item-style2 h2 {
+    font-size: 13px;
+  }
+  .box-item-style2 ul li {
+    font-size: 10px;
+    margin-bottom: 1px;
+  }
+  /* ===============
+Gallery 
+==================*/
+.gallery-box-item {
+  width: 100%;
+}
+.gallery-box-item img {
+  width: 150px;
+  object-fit: cover;
+}
+  /* ===============
+Certifictes
+==================*/
+
+  .gallery,
+  .certificat {
+    display: block;
+    width: 100%;
+  }
+  .gallery-box {
+    grid-template-columns: 150px 150px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .gallery.certificat .gallery-box-item img {
+    width: 145px;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+}
